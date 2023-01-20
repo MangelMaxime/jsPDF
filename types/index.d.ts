@@ -593,7 +593,7 @@ declare module "jspdf" {
     y: number;
   }
 
-  export interface TableRowData {
+  export interface RowData {
     row?: number;
     data?: any[];
   }
@@ -1073,7 +1073,7 @@ declare module "jspdf" {
       y: number,
       data: { [key: string]: string }[],
       headers: string[] | CellConfig[],
-      config: TableConfig
+      config?: TableConfig
     ): jsPDF;
     calculateLineHeight(
       headerNames: string[],
